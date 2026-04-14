@@ -4,26 +4,57 @@
     <title>Brittany Ord | Front-End Developer</title>
     <style>
         body {
-            font-family: Arial;
             margin: 0;
-            padding: 0;
-            text-align: center;
-            background: #f4f4f4;
+            font-family: Arial;
+            background: #0f172a;
+            color: white;
         }
         header {
-            background: #222;
-            color: white;
-            padding: 40px;
+            text-align: center;
+            padding: 60px 20px;
+            background: #1e293b;
+        }
+        h1 {
+            margin: 0;
+            font-size: 42px;
+        }
+        p {
+            color: #cbd5f5;
         }
         section {
-            padding: 30px;
+            padding: 40px;
+            text-align: center;
         }
-        .project {
-            background: white;
-            margin: 10px auto;
-            padding: 15px;
-            width: 80%;
-            border-radius: 8px;
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card {
+            background: #1e293b;
+            margin: 15px;
+            padding: 20px;
+            width: 260px;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background: #38bdf8;
+            color: black;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: #1e293b;
         }
     </style>
 </head>
@@ -36,34 +67,43 @@
 
 <section>
     <h2>About Me</h2>
-    <p>I build responsive, user-friendly websites using WordPress, JavaScript, and React.</p>
+    <p>I build responsive, user-friendly websites using modern web technologies like WordPress, JavaScript, and React. I focus on clean design, performance, and usability.</p>
 </section>
 
 <section>
     <h2>Projects</h2>
+    <div class="projects">
 
-    <div class="project">
-        <h3>Landing Page Project</h3>
-        <p>Responsive landing page using HTML, CSS, and JavaScript.</p>
+        <div class="card">
+            <h3>Landing Page</h3>
+            <p>Responsive HTML/CSS project</p>
+            <a href="https://github.com/brittanyor-pixel/landing-page-project">View Code</a>
+        </div>
+
+        <div class="card">
+            <h3>React Components</h3>
+            <p>Reusable UI components</p>
+            <a href="https://github.com/brittanyor-pixel/react-ui-components">View Code</a>
+        </div>
+
+        <div class="card">
+            <h3>WordPress Site</h3>
+            <p>Custom WordPress build</p>
+            <a href="#">Coming Soon</a>
+        </div>
+
     </div>
-
-    <div class="project">
-        <h3>React UI Components</h3>
-        <p>Reusable UI components built with React.</p>
-    </div>
-
-    <div class="project">
-        <h3>WordPress Business Site</h3>
-        <p>Custom WordPress site using Elementor.</p>
-    </div>
-
 </section>
 
 <section>
     <h2>Contact</h2>
     <p>Email: your@email.com</p>
-    <p>GitHub: github.com/brittanyor-pixel</p>
+    <p><a href="https://github.com/brittanyor-pixel">GitHub Profile</a></p>
 </section>
+
+<footer>
+    <p>© 2026 Brittany Ord</p>
+</footer>
 
 </body>
 </html>
